@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family:
+    system-ui -apple-system "Segoe UI"
+    Roboto "Helvetica Neue"
+    "Noto Sans"
+    "Liberation Sans"
+    Arial sans-serif "Apple Color Emoji"
+    "Segoe UI Emoji"
+    "Segoe UI Symbol"
+    "Noto Color Emoji"
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  background-color: #2C3E50;
+}
+
+
+a.navbar-brand,
+a.nav-link {
+  color: white;
+}
+
+a.navbar-brand:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+a.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+
+.navbar-brand:focus {
+  color: white;
+}
+
+.nav-link {
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.nav-link:focus {
+  color: white;
+}
+
+.home {
+  background-color: #1ABC9C;
+  color: white;
+}
+
+.about {
+  background-color: #1ABC9C;
+  color: white;
+  min-height: 570px;
+}
+
+.contacts {
+  background-color: white;
+  color: white;
+  min-height: 570px;
+}
+
+input {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--bs-body-color);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  background-clip: padding-box;
+  border: solid 0 #dee2e6;
+  border-bottom-width: 1px;
+  outline: 0;
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  
+}
+
+.allinput:hover label{
+  z-index: 1;
+  bottom: 100%;
+}
+
+label{
+  color: #1ABC9C;
+  left: 25%;
+  z-index: -1;
+  bottom: 0%;
+}
+
+
+.homeimg {
+  width: 250px;
+}
+
+.line {
+  height: 4px;
+  width: 80px;
+  background-color: white;
+}
+
+.star {
+  font-weight: 900;
+  color: white;
+}
+
+.toptext{
+  color: #2C3E50;
+}
+
+.lineContact {
+  height: 4px;
+  width: 80px;
+  background-color: #2C3E50;
+}
+
+.starContact {
+  font-weight: 900;
+  color: #2C3E50;
+}
+
+.fa-solid,
+.fas {
+  font-weight: 900;
+}
+
+footer {
+  background-color: #2C3E50;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+  border: solid white 1px;
+  border-radius: 50%;
+  margin: 0 10px
+}
+
