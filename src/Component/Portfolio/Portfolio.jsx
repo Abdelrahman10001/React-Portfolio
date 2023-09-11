@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import img1 from "../../imgs/port1.png";
 import img2 from "../../imgs/port2.png";
 import img3 from "../../imgs/port3.png";
+
 export default function Portfolio() {
 
   const imgs=document.querySelectorAll('img')
@@ -35,23 +38,38 @@ export default function Portfolio() {
               <div className="col-lg-4 portImg col-md-6 ">
                 <img src={img1} className="w-100" alt="" />
                 <div className="imgLayer  justify-content-center align-items-center">
-                  <h2>Plus</h2>
+                <FontAwesomeIcon icon={faPlus} className="fa-6x" style={{ color: '#ffffff' }} />
                 </div>
               </div>
-              <div className="col-lg-4 portImg col-md-6">
+              <div className="col-lg-4 portImg col-md-6 ">
                 <img src={img2} className="w-100" alt="" />
+                <div className="imgLayer  justify-content-center align-items-center">
+                <FontAwesomeIcon icon={faPlus} className="fa-6x" style={{ color: '#ffffff' }} />
+                </div>
               </div>
-              <div className="col-lg-4 portImg col-md-6">
+              <div className="col-lg-4 portImg col-md-6 ">
                 <img src={img3} className="w-100" alt="" />
+                <div className="imgLayer  justify-content-center align-items-center">
+                <FontAwesomeIcon icon={faPlus} className="fa-6x" style={{ color: '#ffffff' }} />
+                </div>
               </div>
-              <div className="col-lg-4 portImg col-md-6">
+              <div className="col-lg-4 portImg col-md-6 ">
                 <img src={img1} className="w-100" alt="" />
+                <div className="imgLayer  justify-content-center align-items-center">
+                <FontAwesomeIcon icon={faPlus} className="fa-6x" style={{ color: '#ffffff' }} />
+                </div>
               </div>
-              <div className="col-lg-4 portImg col-md-6">
+              <div className="col-lg-4 portImg col-md-6 ">
                 <img src={img2} className="w-100" alt="" />
+                <div className="imgLayer  justify-content-center align-items-center">
+                <FontAwesomeIcon icon={faPlus} className="fa-6x" style={{ color: '#ffffff' }} />
+                </div>
               </div>
-              <div className="col-lg-4 portImg col-md-6">
+              <div className="col-lg-4 portImg col-md-6 ">
                 <img src={img3} className="w-100" alt="" />
+                <div className="imgLayer  justify-content-center align-items-center">
+                <FontAwesomeIcon icon={faPlus} className="fa-6x" style={{ color: '#ffffff' }} />
+                </div>
               </div>
             </div>
           </div>

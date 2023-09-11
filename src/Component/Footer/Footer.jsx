@@ -1,5 +1,8 @@
 import React from "react";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook,  faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 export default function Footer() {
   
   return (
@@ -16,11 +19,20 @@ export default function Footer() {
             <div className="col-md-4 my-md-0 my-sm-4">
               <h3>AROUND THE WEB</h3>
               <div className="mediaIcons d-flex justify-content-center">
-                <div className="icon"></div>
-                {/* Icon        sdsdsdd */}
-                <div className="icon"></div>
-                <div className="icon"></div>
-                <div className="icon"></div>
+                <div className="icon d-flex justify-content-center align-items-center">
+                <FontAwesomeIcon icon={faFacebook} className="fa-lg" style={{ color: '#ffffff' }} />
+                </div>
+                <div className="icon d-flex justify-content-center align-items-center">
+                <FontAwesomeIcon icon={faTwitter} className="fa-lg" style={{ color: '#ffffff' }} />
+                </div>
+                <div className="icon d-flex justify-content-center align-items-center">
+                <FontAwesomeIcon icon={faLinkedinIn} className="fa-lg" style={{ color: '#ffffff' }} />
+                </div>
+                <div className="icon d-flex justify-content-center align-items-center">
+                <FontAwesomeIcon icon={faGlobe} className="fa-lg" style={{ color: '#ffffff' }} />
+
+                </div>
+                
               </div>
             </div>
             <div className="col-md-4 my-md-0 my-sm-4">

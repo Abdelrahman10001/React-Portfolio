@@ -78,7 +78,7 @@ export default function Contact() {
 
           
           
-            <button className="btn btn-success btn-mm mx-auto">Send Message</button>
+            <button className="btn btn-success mx-auto">Send Message</button>
             {/* Can't touch any sass */}
           </div>
         </div>
