@@ -1,3 +1,8 @@
+:root {
+  --custom-color: #FF5733;
+  /* Define your custom primary color here */
+}
+
 body {
   margin: 0;
   font-family:
@@ -97,17 +102,20 @@ input {
   outline: 0;
   border-radius: var(--bs-border-radius);
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  
+
 }
 
-.allinput:hover label{
+/* .allinput:hover label{
+  z-index: 1;
+  bottom: 100%;
+} */
+.labelStyle {
   z-index: 1;
   bottom: 100%;
 }
 
-label{
+label {
   color: #1ABC9C;
-  left: 25%;
   z-index: -1;
   bottom: 0%;
 }
@@ -128,7 +136,7 @@ label{
   color: white;
 }
 
-.toptext{
+.toptext {
   color: #2C3E50;
 }
 
@@ -160,3 +168,58 @@ footer {
   margin: 0 10px
 }
 
+.btn-mm {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #198754;
+  --bs-btn-border-color: #198754;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #157347;
+  --bs-btn-hover-border-color: #146c43;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #146c43;
+}
+
+.btn-success {
+  --bs-btn-color: #c01212;
+  --bs-btn-bg: var(--custom-color);
+  /* Note the semicolon here */
+  --bs-btn-border-color: #198754;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #157347;
+  --bs-btn-hover-border-color: #146c43;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #146c43;
+  --bs-btn-active-border-color: #13653f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #198754;
+  --bs-btn-disabled-border-color: #198754;
+}
+
+.workingImgs img {
+  border-radius: 10px;
+}
+
+.portImg {
+  position: relative;
+ 
+}
+
+.portImg:hover .imgLayer {
+  background-color: #26a890ea;
+  display: flex;
+}
+
+.imgLayer {
+  position: absolute;
+  top: 0px;
+  left: 24px;
+  bottom: 0px;
+  right: 24px;
+  background-color: transparent;
+  display: none;
+  border-radius: 10px;
+   transition: all 0.5s ease;
+}
