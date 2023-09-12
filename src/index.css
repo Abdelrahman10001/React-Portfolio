@@ -27,6 +27,7 @@ nav {
 }
 
 
+
 a.navbar-brand,
 a.nav-link {
   color: white;
@@ -58,17 +59,24 @@ a.nav-link:hover {
 
 
 .navbar-brand:focus {
-  color: white;
+  color: white !important;
 }
 
 .nav-link {
   margin: 0 10px;
   font-weight: 700;
+  border-radius: 10px;
+ 
 }
 
-.nav-link:focus {
-  color: white;
+
+.nav-link:focus-within {
+  background-color: #1ABC9C;
+  color: white !important;
+  border-radius: 10px;
+  
 }
+
 
 .home {
   background-color: #1ABC9C;
@@ -189,23 +197,44 @@ footer {
 
 .portImg {
   position: relative;
-  
+
 }
 
 .portImg:hover .imgLayer {
   opacity: 1;
-
 }
 
 .imgLayer {
   position: absolute;
   top: 0px;
-  left: 24px;
+  left: 0px;
   bottom: 0px;
-  right: 24px;
-  background-color: #26a890ea ;
+  right: 0px;
+  background-color: #26a890ea;
   display: flex;
   border-radius: 10px;
   opacity: 0;
   transition: all 0.5s ease;
+}
+
+#lightBoxContainer {
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightBox {
+  width: 45%;
+  height: 65vh;
+}
+
+.portImg {
+  cursor: pointer;
 }

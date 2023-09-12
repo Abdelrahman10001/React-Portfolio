@@ -18,7 +18,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className="contacts  row justify-content-center align-items-center">
+      <div className="contacts  d-flex justify-content-center align-items-center">
         <div className="container p-5 ">
           <div className=" text-center row align-items-center p-2  ">
             <div className="container-fluid p-5 ">
@@ -75,11 +75,7 @@ export default function Contact() {
               placeholder="Your Password"
             />
           </div>
-
-          
-          
             <button className="btn btn-success mx-auto">Send Message</button>
-            {/* Can't touch any sass */}
           </div>
         </div>
       </div>
